@@ -1,0 +1,537 @@
+/* navigation */
+nav{
+    background-color: #7709fe;
+    width: 100%;
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: #7709fe;
+}
+#offcanvasNavbar{
+    background-color: #7709fe;
+}
+#brand img{
+    width: 40px;
+    margin-top: -10px;
+}
+/* banner carousel*/
+#image{
+    width:100%;
+}
+body{
+    background-color: #f7f6f7;
+    font-family: system-ui;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+    background-color:#f9f9fb;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    color: #301878;
+}
+
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+.shopping img{
+    width: 30px;
+    margin-left: -200px;
+}
+header .shopping span{
+    background: #301878;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px; 
+    border-radius: 5px;
+}
+.list .item img{
+    width: 90%;
+    border-radius: 5px;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #7709fe;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 350px;
+    background-color: #7b72f7;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 350px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #0e2331;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -100px;
+
+}
+.card .checkOut div{
+    background-color: #dce0e1;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #0e2331;
+    color: #fff;
+    border-radius: 5px;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(4, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+.total .TPrice
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;  
+}
+/* footer */
+.footer{
+    background-color:#7709fe;
+}
+#first-grid{
+    margin: auto;
+}
+#fourth-grid{
+    padding-top: 47px;
+}
+#fifth-grid{
+    background-color: #301878;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#first-grid img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-grid h5{
+    text-align: center;
+}
+#fifth-grid p
+{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* responsive css */
+@media screen and (max-width:990px)
+{
+    /* offcanvas */
+    #menu-logo{
+        width:40px;
+    }
+    
+    /* banner carousel */
+    #image{
+        width:100%;
+        height: 300px;
+    }
+    /* footer */
+    #first-grid img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #first-grid h5{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:555px) 
+{
+      /* navbar */
+      nav
+      {
+          height: 60px;
+          width: 100%;
+      }
+      #brand
+      {
+          font-size: 18px;
+      }
+      #brand img
+      {
+          width: 50px;
+      }
+      
+      /* banner */
+      #image{
+          height: 200px;
+      }
+      
+      #carousels
+      {
+          margin-top: 40px;
+          width: 100%;
+      }
+     
+      /* footer */
+      #footer
+      {
+          width: 100%;
+      }
+      #footer h5
+      {
+          font-size: 20px;
+      }
+      #footer-grid
+      {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          font-size: 10px;
+          width: 100%;
+      }
+      #first-grid{
+          margin: auto;
+          width: 100vw;
+      }
+      #first-grid img
+      {
+          margin-top: 20px;
+      }
+      #second-grid{
+          margin: auto;
+          width: 50vw;
+          font-size: 15px;
+      }
+      #third-grid{
+          margin: auto;
+          width: 50vw;
+          font-size: 15px;
+      }
+      
+      #fourth-grid
+      {
+          text-align: center;
+          grid-column: 1/3;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+          font-size: 20px;
+          width: 100%;
+      }
+      #fifth-grid
+      {
+          grid-column: 1/3;
+          font-size: 10px;
+      }
+      #fifth-grid p
+      {
+          color: white;
+          font-size: 20px;
+          margin-top: 20px;
+      }
+      .listCard li{
+          display: grid;
+          grid-template-columns: 100px repeat(2, 1fr);
+          color: #fff;
+          row-gap: 10px;
+          width:50%;
+      }
+      .list{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20px;
+          row-gap: 20px;
+          margin-top: 50px;
+          width:100%;
+      }
+      .card{
+          position: fixed;
+          top:0;
+          left: 100%;
+          width:100%;
+          background-color: #7b72f7;
+          height: 100vh;
+          transition: 0.5s;
+      }
+      .container{
+          width: 100%;
+          margin: auto;
+          transition: 0.5s;
+          background-color:#f9f9fb;
+      }
+      header{
+          display: grid;
+          grid-template-columns: 1fr 50px;
+          color: #301878;
+      }
+      header .shopping{
+          position: relative;
+          margin-left: -50px;
+      }
+      .card{
+          position: fixed;
+          top:200px;
+          left: 100%;
+          width: 250px;
+          background-color: #7b72f7;
+          height: 70%;
+          transition: 0.5s;
+      }
+      .active .card{
+          left: calc(100% - 250px);
+      }
+      .active .container{
+         transform: translateX(-200px);
+      }
+      .total .TPrice
+      {
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px;  
+      }
+      .card .checkOut div
+      {
+          background-color: #dce0e1;
+          width: 100%;
+          height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 2px;
+      }
+      .listCard li{
+        display: grid;
+        grid-template-columns: 70px repeat(1, 1fr);
+        color: #fff;
+        row-gap: 10px;
+    }
+  
+}
+@media screen and (max-width:430px) 
+{
+      /* navbar */
+    nav
+    {
+        height: 60px;
+        width: 100%;
+    }
+    #brand
+    {
+        font-size: 18px;
+    }
+    #brand img
+    {
+        width: 50px;
+    }
+    
+    /* banner */
+    #image{
+        height: 200px;
+    }
+    
+    #carousels
+    {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(1, 1fr);
+        color: #fff;
+        row-gap: 10px;
+        width:50%;
+    }
+    .list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        margin-top: 50px;
+        width:100%;
+    }
+    .card{
+        position: fixed;
+        top:0;
+        left: 100%;
+        width:100%;
+        background-color: #7b72f7;
+        height: 100vh;
+        transition: 0.5s;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        transition: 0.5s;
+        background-color:#f9f9fb;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        color: #301878;
+    }
+    header .shopping{
+        position: relative;
+        margin-left: -50px;
+    }
+    .card{
+        position: fixed;
+        top:200px;
+        left: 100%;
+        width: 250px;
+        background-color: #7b72f7;
+        height: 70%;
+        transition: 0.5s;
+    }
+    .active .card{
+        left: calc(100% - 250px);
+    }
+    .active .container{
+       transform: translateX(-200px);
+    }
+    .total .TPrice
+    {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px;  
+    }
+    .card .checkOut div
+    {
+        background-color: #dce0e1;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 70px repeat(1, 1fr);
+        color: #fff;
+        row-gap: 10px;
+    }
+   
+     /* footer */
+
+     #footer-grid
+     {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         font-size: 10px;
+         width: 100%;
+     }
+     #first-grid{
+         margin: auto;
+         width: 100vw;
+     }
+     #second-grid{
+         margin: auto;
+         width: 50vw;
+     }
+     #third-grid{
+         margin: auto;
+         width: 50vw;
+     }
+     
+     #fourth-grid
+     {
+         text-align: center;
+         grid-column: 1/3;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 20px;
+         font-size: 10px;
+         width: 100vw;
+     }
+     #fifth-grid
+     {
+         grid-column: 1/3;
+         font-size: 10px;
+     }
+    #fifth-grid p
+    {
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+}
